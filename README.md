@@ -3,7 +3,12 @@
 
 A python program that transform [tailwindui components](https://tailwindui.com/) into Rust's yew view macro, uses [PydanticAI Agent Framework](https://ai.pydantic.dev/), and [Free Gemini Flash Model](https://deepmind.google/technologies/gemini/flash/).
 
+## The Issue
+The way we use yew's `Html! {}` macro is quite different than other, there we need to put the data inside a tag to be covered in curly braces {} this is by design. 
 
+So when you tried to copy-paste(and improve) the component from tailwindui website, you will need to do the whole rewrite, just so to put the curly braces around the tag with a text in it and it is really becoming tedious really quick.
+
+What this program try to accomplish is to bypass so that it will transform tailwindui components into yew compatible Html! {} macro with ease. 
 
 
 ## Installation
