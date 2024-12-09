@@ -19,5 +19,5 @@ if __name__ == "__main__":
     matches = re.findall(pattern, result.data, re.DOTALL)
 
     print(matches[0].strip())
-    with open("output.txt", "w") as f:
+    with open("output.rs", "w") as f:
         f.write(matches[0].strip())
